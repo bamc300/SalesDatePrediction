@@ -1,0 +1,85 @@
+<div mat-dialog-title>
+    <h1>Order</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>empid</mat-label>
+                <input matInput type="text" placeholder="" formControlName="empid">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>shipperid</mat-label>
+                <input matInput placeholder="" formControlName="shipperid">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>shipname</mat-label>
+                <input matInput type="text" placeholder="" formControlName="shipname">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>shipaddress</mat-label>
+                <input matInput type="text" placeholder="" formControlName="shipaddress">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>shipcity</mat-label>
+                <input matInput type="text" placeholder="" formControlName="shipcity">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>shipcountry</mat-label>
+                <input matInput type="text" placeholder="" formControlName="shipcountry">
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>orderdate</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="orderdate">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>requireddate</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="requireddate">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>shippeddate</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="shippeddate">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>freight</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="freight">
+            </mat-form-field>
+        </div>
+        <div mat-dialog-title>
+            <h1>Order Details</h1>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>productid</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="productid">
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>unitprice</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="unitprice">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>qty</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="qty">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>discount</mat-label>
+                <input matInput type="text" placeholder="Ex. Technical" formControlName="discount">
+            </mat-form-field>
+        </div>
+    </div>
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>
