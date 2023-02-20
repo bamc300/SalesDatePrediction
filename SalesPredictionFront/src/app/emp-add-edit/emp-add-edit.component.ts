@@ -1,18 +1,28 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { CoreService } from '../core/core.service';
 import { EmployeeService } from '../services/employee.service';
+import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
+import { MatTableDataSource } from '@angular/material/table';
+import {FormControl} from '@angular/forms';
 
 @Component({
   selector: 'app-emp-add-edit',
   templateUrl: './emp-add-edit.component.html',
   styleUrls: ['./emp-add-edit.component.scss'],
 })
-export class EmpAddEditComponent implements OnInit {
-  empForm: FormGroup;
 
-  
+export class EmpAddEditComponent implements OnInit {
+  date = new FormControl(new Date());
+  serializedDate = new FormControl(new Date().toISOString());
+  empForm: FormGroup;
+  displayedColumns: string[] = [
+  ];
+  dataSource!: MatTableDataSource<any>;
+  @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
   constructor(
     private _fb: FormBuilder,
@@ -40,6 +50,9 @@ export class EmpAddEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getEmployee();
+    this.getShippers();
+    this.getProducts();
     this.empForm.patchValue(this.data);
   }
 
@@ -47,7 +60,7 @@ export class EmpAddEditComponent implements OnInit {
     if (this.empForm.valid) {
       if (this.data) {
         this._empService
-          .updateEmployee(this.data.id, this.empForm.value)
+          .updateOrders(this.data.id, this.empForm.value)
           .subscribe({
             next: (val: any) => {
               this._coreService.openSnackBar('Orden agregada correctamente');
@@ -69,5 +82,38 @@ export class EmpAddEditComponent implements OnInit {
         });
       }
     }
+  }
+  getEmployee() {
+    this._empService.getEmployee().subscribe({
+      next: (res) => {
+        this.dataSource = new MatTableDataSource(res.response);
+        console.log(res.response)
+        this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
+      },
+      error: console.log,
+    });
+  }
+  getShippers() {
+    this._empService.getShippers().subscribe({
+      next: (res) => {
+        this.dataSource = new MatTableDataSource(res.response);
+        console.log(res.response)
+        this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
+      },
+      error: console.log,
+    });
+  }
+  getProducts() {
+    this._empService.getProducts().subscribe({
+      next: (res) => {
+        this.dataSource = new MatTableDataSource(res.response);
+        console.log(res.response)
+        this.dataSource.sort = this.sort;
+        this.dataSource.paginator = this.paginator;
+      },
+      error: console.log,
+    });
   }
 }

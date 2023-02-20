@@ -688,11 +688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
+      "projectUniqueName": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
       "projectName": "SalesDatePrediction",
-      "projectPath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
+      "projectPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
       "packagesPath": "C:\\Users\\Bryant\\.nuget\\packages\\",
-      "outputPath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\obj\\",
+      "outputPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Bryant\\AppData\\Roaming\\NuGet\\NuGet.Config",

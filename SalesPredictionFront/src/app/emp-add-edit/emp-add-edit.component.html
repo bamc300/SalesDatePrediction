@@ -1,3 +1,8 @@
+<mat-toolbar color="primary">
+    <span>Customer AHPOP- New Order</span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+
 <div mat-dialog-title>
     <h1>Order</h1>
 </div>
@@ -37,16 +42,26 @@
         <div class="row">
             <mat-form-field appearance="outline">
                 <mat-label>orderdate</mat-label>
-                <input matInput type="text" placeholder="Ex. Technical" formControlName="orderdate">
+                <input matInput [matDatepicker]="picker" formControlName="orderdate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>requireddate</mat-label>
-                <input matInput type="text" placeholder="Ex. Technical" formControlName="requireddate">
+                <input matInput [matDatepicker]="picker1" formControlName="requireddate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>shippeddate</mat-label>
-                <input matInput type="text" placeholder="Ex. Technical" formControlName="shippeddate">
+                <input matInput [matDatepicker]="picker2" formControlName="shippeddate">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>
+
         </div>
         <div class="row">
             <mat-form-field appearance="outline">

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyectos\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj": {}
+    "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj": {}
   },
   "projects": {
-    "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj": {
+    "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
+        "projectUniqueName": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
         "projectName": "SalesDatePrediction",
-        "projectPath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
+        "projectPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
         "packagesPath": "C:\\Users\\Bryant\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\obj\\",
+        "outputPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bryant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -72,14 +72,14 @@
         }
       }
     },
-    "D:\\Proyectos\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj": {
+    "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyectos\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj",
+        "projectUniqueName": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj",
         "projectName": "TestSalesDatePrediction",
-        "projectPath": "D:\\Proyectos\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj",
+        "projectPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\TestSalesDatePrediction\\TestSalesDatePrediction.csproj",
         "packagesPath": "C:\\Users\\Bryant\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyectos\\SalesDatePrediction\\TestSalesDatePrediction\\obj\\",
+        "outputPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\TestSalesDatePrediction\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Bryant\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -96,8 +96,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj": {
-                "projectPath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj"
+              "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj": {
+                "projectPath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj"
               }
             }
           }

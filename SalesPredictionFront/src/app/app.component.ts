@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.getEmployeeList();
+    this.getCustomer();
   }
 
   openAddEditEmpForm() {
@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
-          this.getEmployeeList();
+          this.getCustomer();
         }
       },
     });
@@ -53,8 +53,8 @@ export class AppComponent implements OnInit {
   }
 
 
-  getEmployeeList() {
-    this._empService.getEmployeeList().subscribe({
+  getCustomer() {
+    this._empService.getCustomer().subscribe({
       next: (res) => {
         this.dataSource = new MatTableDataSource(res.response);
         this.dataSource.sort = this.sort;
@@ -77,7 +77,7 @@ export class AppComponent implements OnInit {
  //   this._empService.ClientOrders(id).subscribe({
  //     next: (res) => {
  //       this._coreService.openSnackBar('Employee deleted!', 'done');
- //       this.getEmployeeList();
+ //       this.getCustomer();
  //     },
  //     error: console.log,
  //   });
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
     dialogRef.afterClosed().subscribe({
       next: (val) => {
         if (val) {
-          this.getEmployeeList();
+          this.getCustomer();
         }
       },
     });

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MR5kSVGmbU87PndLlbVTN3UzJfpmUL3rVxzeuh85LOlRKuBMijEFyMgVT0ntGFDWrPaV4Rfe1G5JjHlOIIK+Ww==",
+  "dgSpecHash": "DpQbGkT1TgSxU8GkHbfqbJrYAV/mtpaqricY93XIH61dmpncYYZqJGf1O0RDwesOaNq32RP7OQKSmSP4Ykdm8A==",
   "success": true,
-  "projectFilePath": "D:\\Proyectos\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
+  "projectFilePath": "D:\\Proyectos\\SalesDatePredictionB\\SalesDatePrediction\\SalesDatePrediction\\SalesDatePrediction.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Bryant\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\Bryant\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
